@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title Goes Here</title>
+     <title>Form Template</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
@@ -10,18 +10,53 @@
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1>Form Template</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <a href="#" target="_blank">Tab</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
      
    <main class="wrapper">
-    
-        <h2 class ="subheader">Title Goes Here</h2>
-        <p>Content Goes Here</p>
+    <form method="get" action="">
+        <div>
+            <label for="FirstName">First Name</label>: <br />
+            <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required="required" autofocus /> 
+        </div>
+        <div>
+            <label for="LastName">Last Name</label>: <br />
+            <input type="text" name="LastName" id="Last Name" placeholder="Last Name" required="required" /> 
+        </div>
+        <div>
+            <label for="Email">Email</label>: <br />
+            <input type="email" name="Email" id="Last Name" placeholder="Email" required="required" /> 
+        </div>
+        <div>
+            <label for="Address">Address</label>: <br />
+            <input type="text" name="Address" id="Address" placeholder="Address" required="required" /> 
+        </div>
+        <div>
+            <label for="State">State</label>: <br />
+            <select name="State" id="State">
+                 <option value="">Please select state</option>
+                 <option value="AK">Alaska</option>
+                 <option value="CA">California</option>
+                 <option value="OR">Oregon</option>
+                 <option value="WA">Washington</option>    
+            </select>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Would you like to join our mailing list?</legend>
+                <label><input type="radio" name="JoinMailingList" value="Yes" /> Yes</label><br />
+                <label><input type="radio" name="JoinMailingList" value="No" /> No</label>
+            </fieldset>
+        </div>
+        <div>
+             <input type="submit" />
+        </div>
+    </form>
     <footer>
       <p><small>&copy; 2021 by 
           Jercovie Stewart, All Rights Reserved ~ 
