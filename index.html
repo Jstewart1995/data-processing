@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/form.css" />
  </head>
  <body>
      <header>
@@ -19,7 +20,7 @@
      </header>
      
    <main class="wrapper">
-    <form method="get" action="">
+    <form method="get" action="" class="main-form">
         <div>
             <label for="FirstName">First Name</label>: <br />
             <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required="required" autofocus /> 
@@ -47,14 +48,29 @@
             </select>
         </div>
         <div>
-            <fieldset>
-                <legend>Would you like to join our mailing list?</legend>
-                <label><input type="radio" name="JoinMailingList" value="Yes" /> Yes</label><br />
-                <label><input type="radio" name="JoinMailingList" value="No" /> No</label>
-            </fieldset>
+          <fieldset>
+            <legend>Would you like to join our mailing list?</legend>
+            <label><input type="radio" name="JoinMailingList" value="Yes" required="required"/> Yes</label><br />
+            <label><input type="radio" name="JoinMailingList" value="No" /> No</label>
+          </fieldset>
         </div>
         <div>
-             <input type="submit" />
+          <fieldset>
+            <legend>Interested In?</legend>
+            <label><input type="checkbox" name="InterestedIn" value="Website" /> Website</label><br />
+            <label><input type="checkbox" name="InterestedIn" value="OnlineCalendar" /> Online Calendar</label><br/>
+            <label><input type="checkbox" name="InterestedIn" value="ContactForm" /> Contact Form</label><br />
+            <label><input type="checkbox" name="InterestedIn" value="Lollipops" /> Complimentary Lollipops</label>
+          </fieldset>
+        </div>
+
+        <div>
+          <label for="Comments">Comments</label>: <br />
+          <textarea name="Comments" cols="36" rows="4" id="Comments"></textarea>
+        </div>
+        
+        <div>
+          <input type="submit" value="Submit it!"/>
         </div>
     </form>
     <footer>
@@ -62,7 +78,7 @@
           Jercovie Stewart, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
-     </p>
+      </p>
     </footer>
   </main>
   <script src="js/main.js"></script>  
